@@ -4,3 +4,6 @@
 [submodule "100_Todo/projects/neil_AI_Agent"]
 	path = 100_Todo/projects/neil_AI_Agent
 	url = https://github.com/neil7897/neil_AI_Agent
+[submodule "100_Todo/projects/order-tracker"]
+	path = 100_Todo/projects/order-tracker
+	url = https://github.com/neil7897/order-tracker.git
