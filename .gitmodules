@@ -1,0 +1,6 @@
+[submodule "100_Todo/projects/fuchang-erp"]
+	path = 100_Todo/projects/fuchang-erp
+	url = https://github.com/neil7897/fuchang-erp
+[submodule "100_Todo/projects/neil_AI_Agent"]
+	path = 100_Todo/projects/neil_AI_Agent
+	url = https://github.com/neil7897/neil_AI_Agent
