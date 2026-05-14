@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# 生成圖片（binary，不入版控）
+100_Todo/drafts/images/
+
+# OS
+.DS_Store
+Thumbs.db

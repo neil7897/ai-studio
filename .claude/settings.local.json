@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cmd /c \"dir C:\\\\Users\\\\nicho\\\\.claude\\\\ /AL\" 2>&1)",
+      "PowerShell(robocopy \"C:\\\\Users\\\\nicho\\\\ai-studio\" \"C:\\\\Users\\\\nicho\\\\OneDrive\\\\ai-studio\" /E /COPYALL /XJ /R:3 /W:5 /NP 2>&1 | Select-Object -Last 20)",
+      "PowerShell(robocopy \"C:\\\\Users\\\\nicho\\\\ai-studio\" \"C:\\\\Users\\\\nicho\\\\OneDrive\\\\ai-studio\" /E /XJ /R:3 /W:5 /NP 2>&1 | Select-Object -Last 15)",
+      "PowerShell($PROFILE)",
+      "Bash(npx asar *)",
+      "PowerShell($extractPath = \"C:\\\\Users\\\\nicho\\\\Desktop\\\\wmux-extracted\"; npx asar extract \"C:\\\\Users\\\\nicho\\\\Desktop\\\\wmux\\\\resources\\\\app.asar\" $extractPath 2>&1 | Select-Object -Last 5)",
+      "PowerShell($js = Get-Content \"C:\\\\Users\\\\nicho\\\\Desktop\\\\wmux-extracted\\\\dist\\\\renderer\\\\assets\\\\index-Bs1vvFlW.js\" -Raw -Encoding UTF8; $matches = [regex]::Matches\\($js, '\"[A-Z][a-zA-Z ]{3,40}\"'\\); $matches | ForEach-Object { $_.Value } | Sort-Object -Unique | Select-Object -First 80)",
+      "PowerShell($js = Get-Content \"C:\\\\Users\\\\nicho\\\\Desktop\\\\wmux-extracted\\\\dist\\\\renderer\\\\assets\\\\index-Bs1vvFlW.js\" -Raw -Encoding UTF8; $matches = [regex]::Matches\\($js, '\"[A-Z][a-zA-Z ]{3,40}\"'\\); $matches | ForEach-Object { $_.Value } | Sort-Object -Unique | Select-Object -Skip 80 -First 100)",
+      "PowerShell($js = Get-Content \"C:\\\\Users\\\\nicho\\\\Desktop\\\\wmux-extracted\\\\dist\\\\renderer\\\\assets\\\\index-Bs1vvFlW.js\" -Raw -Encoding UTF8; $matches = [regex]::Matches\\($js, '\"[A-Z][a-zA-Z ]{3,40}\"'\\); $all = $matches | ForEach-Object { $_.Value } | Sort-Object -Unique; Write-Host \"Total unique strings: $\\($all.Count\\)\")",
+      "PowerShell(Out-File *)",
+      "PowerShell($js = Get-Content \"C:\\\\Users\\\\nicho\\\\Desktop\\\\wmux-extracted\\\\dist\\\\renderer\\\\assets\\\\index-Bs1vvFlW.js\" -Raw -Encoding UTF8; $matches = [regex]::Matches\\($js, '\"[A-Z][a-zA-Z ]{3,40}\"'\\); $all = $matches | ForEach-Object { $_.Value } | Sort-Object -Unique; $all | Select-Object -Skip 200)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(pip show *)",
+      "PowerShell(python --version; python -m pip show google-genai 2>$null)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(& \"C:\\\\Users\\\\nicho\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\python.exe\" --version)",
+      "PowerShell(pip *)",
+      "PowerShell(gh *)",
+      "PowerShell(winget install *)"
+    ]
+  }
+}
